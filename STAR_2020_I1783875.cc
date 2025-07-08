@@ -16,7 +16,7 @@ namespace Rivet {
   public:
 
     /// Constructor
-    DEFAULT_RIVET_ANALYSIS_CTOR(STAR_2020_I1783875);
+    RIVET_DEFAULT_ANALYSIS_CTOR(STAR_2020_I1783875);
 
     /// Book histograms and initialise projections before the run
     void init() {
@@ -79,7 +79,7 @@ namespace Rivet {
 
 
       //! get the final state particles and start clustering jets -
-      Particles fsParticles = applyProjection<FinalState>(event,"fs").particles();
+      Particles fsParticles = apply<FinalState>(event,"fs").particles();
 
       //! necessary jet selectors 
       fastjet::Selector select_eta_R02  = fastjet::SelectorAbsEtaMax(0.8);
@@ -246,6 +246,6 @@ namespace Rivet {
   };
 
 
-  DECLARE_RIVET_PLUGIN(STAR_2020_I1783875);
+  RIVET_DECLARE_PLUGIN(STAR_2020_I1783875);
 
 }

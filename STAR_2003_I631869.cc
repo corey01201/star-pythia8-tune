@@ -13,7 +13,7 @@ namespace Rivet {
     double pimass = 0;
 
     /// Constructor
-    DEFAULT_RIVET_ANALYSIS_CTOR(STAR_2003_I631869);
+    RIVET_DEFAULT_ANALYSIS_CTOR(STAR_2003_I631869);
 
     /// Book histograms and initialise projections before the run
     void init() {
@@ -30,7 +30,7 @@ namespace Rivet {
     void analyze(const Event& event)
     {
 
-      Particles npParticles = applyProjection<UnstableParticles>(event,"np").particles();
+      Particles npParticles = apply<UnstableParticles>(event,"np").particles();
        
       Particle lead;
         
@@ -62,7 +62,13 @@ namespace Rivet {
       for(size_t i =0; i<_h["InclPI0Xsec"]->numBinsX(); i++)
 	{
           nselected++;
-          std::pair<double, double> binedges = _h["InclPI0Xsec"]->bin(i).xEdges();;
+          //RITHIA PLEASE CHECK
+          const auto& hist = *_h["InclPI0Xsec"];
+          double lowEdge = hist.bin(i).xEdge();// hist.xEdge(i);
+          double highEdge = hist.bin(i+1).xEdge();//hist.xEdge(i+1);
+          std::pair<double, double> binedges = std::make_pair(lowEdge, highEdge);
+
+          //std::pair<double, double> binedges = _h["InclPI0Xsec"]->bin(i).xEdges();;
 
           double piP1 = pow(pow(binedges.first,2)-pow(pimass,2),0.5);
           double piP2 = pow(pow(binedges.second,2)-pow(pimass,2),0.5);
@@ -84,6 +90,6 @@ namespace Rivet {
     map<string, Histo1DPtr> _h;      
       
   };
-  DECLARE_RIVET_PLUGIN(STAR_2003_I631869);
+  RIVET_DECLARE_PLUGIN(STAR_2003_I631869);
 
 }

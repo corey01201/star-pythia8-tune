@@ -13,7 +13,7 @@ namespace Rivet {
     public:
 
       /// Constructor
-      DEFAULT_RIVET_ANALYSIS_CTOR(STAR_2012_I930463);
+      RIVET_DEFAULT_ANALYSIS_CTOR(STAR_2012_I930463);
 
       /// Book histograms and initialise projections before the run
       void init() {
@@ -49,7 +49,7 @@ namespace Rivet {
       /// Perform the per-event analysis
       void analyze(const Event& event) {
 
-        const FinalState& finalstate = applyProjection<FinalState>(event, "FS");
+        const FinalState& finalstate = apply<FinalState>(event, "FS");
 
         for(Particle p: finalstate.particles()){
 
@@ -106,6 +106,6 @@ namespace Rivet {
   };
 
 
-  DECLARE_RIVET_PLUGIN(STAR_2012_I930463);
+  RIVET_DECLARE_PLUGIN(STAR_2012_I930463);
 
 }
