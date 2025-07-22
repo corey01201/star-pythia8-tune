@@ -67,12 +67,12 @@ namespace Rivet {
 
         scale(_h, 1.0/sumOfWeights());
 
-        divide(_h["pT_piminus"], _h["pT_piplus"],  _e["pimpip"]);
-        divide(_h["pT_pbar"],    _h["pT_p"],       _e["pbarp"]);
-        divide(_h["pT_kminus"],  _h["pT_kplus"],   _e["KmKp"]);
-        divide(_h["pT_p"],       _h["pT_piplus"],  _e["ppi"]);
-        divide(_h["pT_pbar"],    _h["pT_piminus"], _e["pbarpibar"]);
-        divide(_h["K"],          _h["pi"],         _e["Kpi"]);
+        divide(_h["pT_piminus"], _h["pT_piplus"],  _e["ratio_pimpip"]);
+        divide(_h["pT_pbar"],    _h["pT_p"],       _e["ratio_pbarp"]);
+        divide(_h["pT_kminus"],  _h["pT_kplus"],   _e["ratio_KmKp"]);
+        divide(_h["pT_p"],       _h["pT_piplus"],  _e["ratio_ppi"]);
+        divide(_h["pT_pbar"],    _h["pT_piminus"], _e["ratio_pbarpibar"]);
+        divide(_h["K"],          _h["pi"],         _e["ratio_Kpi"]);
 
       }
 
