@@ -11,7 +11,7 @@ namespace Rivet {
   public:
 
     /// Constructor
-    DEFAULT_RIVET_ANALYSIS_CTOR(STAR_2019_I1771348);
+    RIVET_DEFAULT_ANALYSIS_CTOR(STAR_2019_I1771348);
 
 
     /// Book histograms and initialise projections before the run
@@ -20,7 +20,7 @@ namespace Rivet {
       const FinalState fs(Cuts::abseta < 1.0 && Cuts::pT > 0.2*GeV);
       declare(fs, "fs");
 
-      FastJets jetfs(fs, FastJets::ANTIKT, 0.6);
+      FastJets jetfs(fs, JetAlg::ANTIKT , 0.6);
       declare(jetfs, "jets");
 
       // Book histograms
@@ -50,7 +50,7 @@ namespace Rivet {
 	vetoEvent;
 
       //! get the final state particles and start clustering jets -
-      Particles fsParticles = applyProjection<FinalState>(event,"fs").particles();
+      Particles fsParticles = apply<FinalState>(event,"fs").particles();
       PseudoJets ch_parts;
       for(const Particle& p : fsParticles){
 	if(p.charge() != 0)
@@ -115,6 +115,6 @@ namespace Rivet {
   };
 
 
-  DECLARE_RIVET_PLUGIN(STAR_2019_I1771348);
+  RIVET_DECLARE_PLUGIN(STAR_2019_I1771348);
 
 }
