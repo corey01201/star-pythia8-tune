@@ -54,8 +54,8 @@ namespace Rivet {
     /// Finalize
     void finalize() {
       divide(_h["pT_piminus"],    _h["pT_piplus"],      _e["piminus_piplus"]);
-      divide(_h["pT_antiproton"], _h["pT_proton"],      _e["_antipr_pr"]);
-      divide(_h["pT_proton"],     _h["tmp_pT_piplus"],  _e["_pr_piplus"]);
+      divide(_h["pT_antiproton"], _h["pT_proton"],      _e["antipr_pr"]);
+      divide(_h["pT_proton"],     _h["tmp_pT_piplus"],  _e["pr_piplus"]);
       divide(_h["pT_antiproton"], _h["tmp_pT_piminus"], _e["antipr_piminus"]);
       scale(_h, 1.0/ TWOPI / sumOfWeights());
     }
