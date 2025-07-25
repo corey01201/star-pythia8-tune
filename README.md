@@ -1,5 +1,6 @@
-This is my attempt to get these analyses working in Rivet 4.1.
+These analyses now work in Rivet 4.1.  
 
-STAR_2006_I709170 and STAR_2012_I930463 do not compile.  This appears to be because of issues with changes in histograms.
-
-STAR_2019_I1771348 and STAR_2020_I1783875 appear to have issues with the conversion to yoda2
+The script RunFIFOpp200GeV.sh can be used to run these analyses in the PYTHIA-Rivet docker container to allow for testing.  This uses the following configuration files to run the PYTHIA example code main144 to generate HEPMC files in FIFO mode and pipe them into Rivet without writing them to disk:
+main144HepMC.cmnd
+main144Rivet.cmnd
+pp200GeV.cmnd
