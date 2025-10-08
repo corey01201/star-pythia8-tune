@@ -17,7 +17,9 @@ rivet-build RivetSTAR_2021_I1853218.so STAR_2021_I1853218.cc
 mkfifo pp200GeV.hepmc 
 cat pp200GeV.hepmc > /dev/null &
 
-pythia8-main144 -c pp200GeV.cmnd -c main144HepMC.cmnd -c main144Rivet.cmnd -o pp200GeV
+pythia8-main144 -c pp200GeV.cmnd -c pp200GeV.1.cmnd -c main144HepMC.cmnd -c main144Rivet.cmnd -o pp200GeV
+
+rivet-mkhtml --pwd pp200GeV.yoda
 
 pkill -f "cat pp200GeV.hepmc"
 rm -f pp200GeV.hepmc

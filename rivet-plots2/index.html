@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Plots from Rivet analyses</title>
+    <style>
+          html { font-family: arial black, sans-serif; color: #333333; }
+          img { border: 0; }
+          a { text-decoration: none; font-weight: bold; }
+          footer { clear:both; margin-top:2em; margin-bottom:2em; padding-top:2em; color: #999999; }
+
+          .anasumm, .indexanasumm { margin-bottom: 2.5em; line-height: 1.4; font-size: 120%; font-family: georgia, palatino, serif; }
+          .back, .back a { font-weight: bold; color: gray; font-variant: small-caps; text-transform: uppercase; margin-bottom: 2em; }
+
+          .filterform { position: fixed; top: 1em; right: 1em; background: white; opacity: 0.2; }
+          .filterform { padding: 1em; padding-bottom: 0.1em; border: 2px solid gray; border-radius: 0.7em; }
+          .filterform:hover, .filterform:focus-within { opacity: 1.0; -webkit-transition: opacity 1s; transition: opacity 1s; drop-shadow(gray 0.5em 0.5em 10px); }
+          .filterpatt { padding: 0.3em; font-size: 100%; border: 1px solid #85C1E9; border-radius: 0.1em; }
+          .filterbutton { padding: 0.3em; font-size: 100%; border: 2px solid #85C1E9; background:#D6EAF8; border-radius: 0.3em; }
+
+          .plot { float:left; font-weight:bold; page-break-inside: avoid; }
+          .plotlinks {  }
+          .plotname { font-size:smaller; }
+
+          @media print {
+            .noprint { display:none; }
+            .back { display:none; }
+            .filterform { display:none; }
+            .plotlinks { display:none; }
+          }
+        </style>
+                    <script type="text/javascript">
+              window.MathJax = { tex: { inlineMath: [['$','$']] },
+                                 options: { menuOptions: { settings: { inTabOrder: false } } } };
+            </script>
+            <script type="text/javascript" id="MathJax-script" async
+                src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-chtml-full.min.js">
+            </script>
+            
+
+            <script type="text/javascript">
+                function filterPlots(ana, patt) {
+                    var regex = new RegExp(patt);
+                    var sec = document.getElementById('ana_'+ana);
+                    var plots = sec.getElementsByClassName('plot');
+                    var i; for (i = 0; i < plots.length; ++i) {
+                        // var viz = (regex.test(plots[i].id)) ? 'visible' : 'hidden';
+                        // plots[i].style.visibility = viz;
+                        var dis = (regex.test(plots[i].id)) ? 'block' : 'none';
+                        plots[i].style.display = dis;
+                    }
+                    return false;
+               }
+            </script>
+            </head>
+
+<body><h1>Plots from Rivet analyses</h1>
+
+
+<h2><a href="BRAHMS_2007_I742956/index.html" style="text-decoration:none;">Production of Mesons and Baryons at High Rapidity and High $P_{T}$ in Proton-Proton  Collisions at $\sqrt{s} = 200$ GeV (BRAHMS_2007_I742956)</a></h2>
+<p><a href="https://inspirehep.net/literature/742956">Inspire</a> &#124; <a href="http://hepdata.net/record/ins742956">HepData</a> &#124; Phys.Rev.Lett. 98 (2007) 252001 &#124; DOI:10.1103/PhysRevLett.98.252001 &#124; <a href="https://arxiv.org/abs/hep-ex/0701041">arXiv:hep-ex/0701041</a></p>
+<p class="indexanasumm">We present particle spectra for charged hadrons $\pi^\pm, K^\pm, p$  and $\bar{p}$ from pp collisions at $\sqrt{s}=200$ GeV measured for the first time at forward rapidities (2.95 and 3.3). The kinematics of these measurements are skewed in a way that probes the small momentum fraction in one of the protons and large fractions in the other.  Large proton to pion ratios are observed at values of transverse momentum that extend up to  4 GeV/c, where protons have momenta up to 35 GeV. Next-to-leading order perturbative QCD calculations describe the production of pions and kaons well at these rapidities,  but fail to account for the large proton yields and small $\bar{p}/p$ ratios.</p>
+
+<h2><a href="STAR_2021_I1853218/index.html" style="text-decoration:none;">Measurement of the mid-rapidity transverse energy distribution from $\sqrt{s_{NN}}$ = 130-GeV Au + Au collisions at RHIC (STAR_2021_I1853218)</a></h2>
+<p><a href="https://inspirehep.net/literature/1853218">Inspire</a> &#124; <a href="http://hepdata.net/record/ins1853218">HepData</a> &#124; Phys.Rev.D 104 (2021) 5, 052007 &#124; DOI:10.1103/PhysRevD.104.052007  &#124; <a href="https://arxiv.org/abs/2103.13286">arXiv:2103.13286</a></p>
+<p class="indexanasumm">We present the first inclusive measurements of the invariant and SoftDrop jet mass in proton-proton collisions at $\sqrt{s}=\unit[200]{GeV}$ at STAR. The measurements are fully corrected for detector effects, and reported differentially in both the jet transverse momentum and jet radius parameter. We compare the measurements to established leading-order Monte Carlo event generators and find that STAR-tuned PYTHIA-6 reproduces the data, while LHC tunes of PYTHIA-8 and HERWIG-7 do not agree with the data, providing further constraints on parameter tuning. Finally, we observe that SoftDrop grooming, for which the contribution of wide-angle non-perturbative radiation is suppressed, shifts the jet mass distributions into closer agreement with the partonic jet mass as determined by both PYTHIA-8 and a next-to-leading-logarithmic accuracy perturbative QCD calculation. These measurements complement recent LHC measurements in a different kinematic region, as well as establish a baseline for future jet mass measurements in heavy-ion collisions at RHIC.</p>
+
+<h2><a href="STAR_2020_I1783875/index.html" style="text-decoration:none;">Measurement of Groomed Jet Substructure Observables in \pp Collisions at $\sqrt{s} = 200$ GeV with STAR (STAR_2020_I1783875)</a></h2>
+<p><a href="https://inspirehep.net/literature/1783875">Inspire</a> &#124; <a href="http://hepdata.net/record/ins1783875">HepData</a> &#124; Phys.Lett.B 811 (2020) 135846 &#124; https://doi.org/10.1016/j.physletb.2020.135846 &#124; <a href="https://arxiv.org/abs/2003.02114">arXiv:2003.02114</a></p>
+<p class="indexanasumm">In this letter, measurements of the shared momentum fraction ($z_{\rm{g}}$) and the groomed jet radius ($R_{\rm{g}}$), as defined in the SoftDrop algorihm, are reported in \pp collisions at $\sqrt{s} = 200$ GeV collected by the STAR experiment. These substructure observables are differentially measured for jets of varying resolution parameters from $R = 0.2 - 0.6$ in the transverse momentum range $15 &lt; p_{\rm{T, jet}} &lt; 60$  GeV$/c$. These studies show that, in the $p_{\rm{T, jet}}$ range accessible at $\sqrt{s} = 200$ GeV and with increasing jet resolution parameter and jet transverse momentum, the $z_{\rm{g}}$ distribution asymptotically converges to the DGLAP splitting kernel for a quark radiating a gluon. The groomed jet radius measurements reflect a momentum-dependent narrowing of the jet structure for jets of a given resolution parameter, i.e., the larger the $p_{\rm{T, jet}}$, the narrower the first splitting. For the first time, these fully corrected measurements are compared to Monte Carlo generators with leading order QCD matrix elements and leading log in the parton shower, and to state-of-the-art theoretical calculations at next-to-leading-log accuracy. We observe that PYTHIA 6 with parameters tuned to reproduce RHIC measurements is able to quantitatively describe data, whereas PYTHIA 8 and HERWIG 7, tuned to reproduce LHC data, are unable to provide a simultaneous description of both $z_{\rm{g}}$ and $R_{\rm{g}}$, resulting in opportunities for fine parameter tuning of these models for \pp collisions at RHIC energies. We also find that the theoretical calculations without non-perturbative corrections are able to qualitatively describe the trend in data for jets of large resolution parameters at high $p_{\rm{T, jet}}$, but fail at small jet resolution parameters and low jet transverse momenta.</p>
+
+<h2><a href="STAR_2019_I1771348/index.html" style="text-decoration:none;">Underlying event measurements in p+p collisions at $\sqrt{s}=$ 200 GeV at RHIC (STAR_2019_I1771348)</a></h2>
+<p><a href="https://inspirehep.net/literature/1771348">Inspire</a> &#124; <a href="http://hepdata.net/record/ins1771348">HepData</a> &#124; Phys.Rev.D 101 (2020) 5, 052004 &#124; DOI:10.1103/PhysRevD.101.052004 &#124; <a href="https://arxiv.org/abs/1912.08187">arXiv:1912.08187</a></p>
+<p class="indexanasumm">Particle production sensitive to non-factorizable and non-perturbative processes that contribute to the underlying event associated with a high transverse momentum ($p_{T}$) jet in proton+proton collisions at $\sqrt{s}$=200 GeV is studied with the STAR detector. Each event is divided into three regions based on the azimuthal angle with respect to the highest-$p_{T}$ jet direction, in the leading jet direction ("Toward"), opposite to the leading jet ("Away"), and perpendicular to the leading jet ("Transverse").  In the Transverse region, the average charged particle density is found to be between 0.4 and 0.6 and the mean transverse momentum, $\langle  p_{T}\rangle$, between 0.5-0.7 GeV/$c$ for particles with $p_{T}&gt;$0.2 GeV/$c$ at mid-pseudorapidity ($|\eta|&lt;$1) and jet $p_{T}&gt;$15 GeV/$c$. Both average particle density and $\langle p_{T}\rangle$ depend weakly on the leading jet $p_{T}$. Closer inspection of the Transverse region hints that contributions to the underlying event from  initial- and final-state radiation are significantly smaller in these collisions than at the higher energies, up to 13 TeV, recorded at the LHC. Underlying event measurements associated with a high-$p_{T}$ jet will contribute to our understanding of QCD processes at hard and soft scales at RHIC energies, as well as provide constraints to modeling of underlying event dynamics.</p>
+
+<h2><a href="STAR_2012_I930463/index.html" style="text-decoration:none;">Identified hadron compositions in p+p and Au+Au collisions at high transverse momenta at $\sqrt{s_{_{NN}}} = 200$ GeV (STAR_2012_I930463)</a></h2>
+<p><a href="https://inspirehep.net/literature/930463">Inspire</a> &#124; <a href="http://hepdata.net/record/ins930463">HepData</a> &#124; Phys.Rev.Lett. 108 (2012) 072302 &#124; DOI:10.1103/PhysRevLett.108.072302 &#124; <a href="https://arxiv.org/abs/1110.0579">arXiv:1110.0579</a></p>
+<p class="indexanasumm">We report transverse momentum ($p_{T} \leq15$ GeV/$c$) spectra of $\pi^{\pm}$, $K^{\pm}$, $p$, $\bar{p}$, $K_{S}^{0}$, and $\rho^{0}$ at mid-rapidity in p+p and Au+Au collisions at $\sqrt{s_{_{NN}}}$ = 200 GeV. Perturbative QCD calculations are consistent with $\pi^{\pm}$ spectra in p+p collisions but do not reproduce $K$ and $p(\bar{p})$ spectra. The observed decreasing antiparticle-to-particle ratios with increasing $p_T$ provide experimental evidence for varying quark and gluon jet contributions to high-$p_T$ hadron yields. The relative hadron abundances in Au+Au at $p_{T} \gtrsim 8$ GeV/$c$ are measured to be similar to the p+p results, despite the expected Casimir effect for parton energy loss.</p>
+
+<h2><a href="STAR_2003_I631869/index.html" style="text-decoration:none;">Cross Sections and Transverse Single-Spin Asymmetries in Forward Neutral Pion Production from Proton Collisions at ${\sqrt{s}=200}$ GeV (STAR_2003_I631869)</a></h2>
+<p><a href="https://inspirehep.net/literature/631869">Inspire</a> &#124; <a href="http://hepdata.net/record/ins631869">HepData</a> &#124; Phys.Rev.Lett. 92 (2004) 171801 &#124; DOI:10.1103/PhysRevLett.92.171801 &#124; <a href="https://arxiv.org/abs/hep-ex/0310058">arXiv:hep-ex/0310058</a></p>
+<p class="indexanasumm">Measurements of the production of forward high energy $\pi^0$ mesons from transversely polarized proton collisions at $\sqrt{s}=200\ $GeV are reported. The cross section is generally consistent with next-to-leading order perturbative QCD calculations. The analyzing power is small at $x_F$ below about 0.3, and becomes positive and large at higher $x_F$, similar to the trend in data at $\sqrt{s}\le 20$ GeV. The analyzing power is in qualitative agreement with perturbative QCD model expectations. This is the first significant spin result seen for particles produced with $p_T &gt; 1\ $GeV/c at a polarized proton collider.</p>
+<footer>
+<p id="timestamp">Generated at Tuesday, 07. October 2025 06:42PM</p>
+<p id="command">Created with command: <pre>rivet-mkhtml --pwd pp200GeV.yoda</pre></p>
+</footer>
+
+</body>
+</html>

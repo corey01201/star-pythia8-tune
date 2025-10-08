@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Plots from Rivet analyses &ndash; STAR_2020_I1783875</title>
+<style>
+          html { font-family: arial black, sans-serif; color: #333333; }
+          img { border: 0; }
+          a { text-decoration: none; font-weight: bold; }
+          footer { clear:both; margin-top:2em; margin-bottom:2em; padding-top:2em; color: #999999; }
+
+          .anasumm, .indexanasumm { margin-bottom: 2.5em; line-height: 1.4; font-size: 120%; font-family: georgia, palatino, serif; }
+          .back, .back a { font-weight: bold; color: gray; font-variant: small-caps; text-transform: uppercase; margin-bottom: 2em; }
+
+          .filterform { position: fixed; top: 1em; right: 1em; background: white; opacity: 0.2; }
+          .filterform { padding: 1em; padding-bottom: 0.1em; border: 2px solid gray; border-radius: 0.7em; }
+          .filterform:hover, .filterform:focus-within { opacity: 1.0; -webkit-transition: opacity 1s; transition: opacity 1s; drop-shadow(gray 0.5em 0.5em 10px); }
+          .filterpatt { padding: 0.3em; font-size: 100%; border: 1px solid #85C1E9; border-radius: 0.1em; }
+          .filterbutton { padding: 0.3em; font-size: 100%; border: 2px solid #85C1E9; background:#D6EAF8; border-radius: 0.3em; }
+
+          .plot { float:left; font-weight:bold; page-break-inside: avoid; }
+          .plotlinks {  }
+          .plotname { font-size:smaller; }
+
+          @media print {
+            .noprint { display:none; }
+            .back { display:none; }
+            .filterform { display:none; }
+            .plotlinks { display:none; }
+          }
+        </style>
+                    <script type="text/javascript">
+              window.MathJax = { tex: { inlineMath: [['$','$']] },
+                                 options: { menuOptions: { settings: { inTabOrder: false } } } };
+            </script>
+            <script type="text/javascript" id="MathJax-script" async
+                src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-chtml-full.min.js">
+            </script>
+            
+
+            <script type="text/javascript">
+                function filterPlots(ana, patt) {
+                    var regex = new RegExp(patt);
+                    var sec = document.getElementById('ana_'+ana);
+                    var plots = sec.getElementsByClassName('plot');
+                    var i; for (i = 0; i < plots.length; ++i) {
+                        // var viz = (regex.test(plots[i].id)) ? 'visible' : 'hidden';
+                        // plots[i].style.visibility = viz;
+                        var dis = (regex.test(plots[i].id)) ? 'block' : 'none';
+                        plots[i].style.display = dis;
+                    }
+                    return false;
+               }
+            </script>
+            </head>
+
+<body>
+<section id="ana_STAR_2020_I1783875">
+<p class="back"><a href="../index.html" title="Return to index page">&larrhk; Index</a></p>
+<h2>STAR_2020_I1783875</h2>
+<p class="anasumm">
+  In this letter, measurements of the shared momentum fraction ($z_{\rm{g}}$) and the groomed jet radius ($R_{\rm{g}}$), as defined in the SoftDrop algorihm, are reported in \pp collisions at $\sqrt{s} = 200$ GeV collected by the STAR experiment. These substructure observables are differentially measured for jets of varying resolution parameters from $R = 0.2 - 0.6$ in the transverse momentum range $15 &lt; p_{\rm{T, jet}} &lt; 60$  GeV$/c$. These studies show that, in the $p_{\rm{T, jet}}$ range accessible at $\sqrt{s} = 200$ GeV and with increasing jet resolution parameter and jet transverse momentum, the $z_{\rm{g}}$ distribution asymptotically converges to the DGLAP splitting kernel for a quark radiating a gluon. The groomed jet radius measurements reflect a momentum-dependent narrowing of the jet structure for jets of a given resolution parameter, i.e., the larger the $p_{\rm{T, jet}}$, the narrower the first splitting. For the first time, these fully corrected measurements are compared to Monte Carlo generators with leading order QCD matrix elements and leading log in the parton shower, and to state-of-the-art theoretical calculations at next-to-leading-log accuracy. We observe that PYTHIA 6 with parameters tuned to reproduce RHIC measurements is able to quantitatively describe data, whereas PYTHIA 8 and HERWIG 7, tuned to reproduce LHC data, are unable to provide a simultaneous description of both $z_{\rm{g}}$ and $R_{\rm{g}}$, resulting in opportunities for fine parameter tuning of these models for \pp collisions at RHIC energies. We also find that the theoretical calculations without non-perturbative corrections are able to qualitatively describe the trend in data for jets of large resolution parameters at high $p_{\rm{T, jet}}$, but fail at small jet resolution parameters and low jet transverse momenta.
+</p>
+
+<div class="filterform">
+  <form onsubmit="var patt = document.getElementById('patt_STAR_2020_I1783875').value; filterPlots('STAR_2020_I1783875', patt); return false;">
+  <span><b>Filter plots:</b>&emsp;</span>
+  <input class="filterpatt" id="patt_STAR_2020_I1783875" type="search" accesskey="s" title="Filter: Alt+s">
+  <input class="filterbutton" type="submit" value="Filter">
+  </form>
+</div>
+
+<div class="plot" id="plot_d04-x01-y01">
+  <div class="plothead">
+    <span class="plotlinks">
+      <a href="#STAR_2020_I1783875-d04-x01-y01">&#9875;</a>
+      <a href="d04-x01-y01.py">&#8984;</a>
+      <a href="d04-x01-y01__data.py">&#128202;</a>
+    </span>
+    <span class="plotname">d04-x01-y01:</span>
+  </div>
+  <a id="STAR_2020_I1783875-d04-x01-y01" href="d04-x01-y01.pdf"><img src="d04-x01-y01.png"></a>
+</div>
+
+<div class="plot" id="plot_d05-x01-y01">
+  <div class="plothead">
+    <span class="plotlinks">
+      <a href="#STAR_2020_I1783875-d05-x01-y01">&#9875;</a>
+      <a href="d05-x01-y01.py">&#8984;</a>
+      <a href="d05-x01-y01__data.py">&#128202;</a>
+    </span>
+    <span class="plotname">d05-x01-y01:</span>
+  </div>
+  <a id="STAR_2020_I1783875-d05-x01-y01" href="d05-x01-y01.pdf"><img src="d05-x01-y01.png"></a>
+</div>
+
+<div class="plot" id="plot_d06-x01-y01">
+  <div class="plothead">
+    <span class="plotlinks">
+      <a href="#STAR_2020_I1783875-d06-x01-y01">&#9875;</a>
+      <a href="d06-x01-y01.py">&#8984;</a>
+      <a href="d06-x01-y01__data.py">&#128202;</a>
+    </span>
+    <span class="plotname">d06-x01-y01:</span>
+  </div>
+  <a id="STAR_2020_I1783875-d06-x01-y01" href="d06-x01-y01.pdf"><img src="d06-x01-y01.png"></a>
+</div>
+
+<div class="plot" id="plot_d07-x01-y01">
+  <div class="plothead">
+    <span class="plotlinks">
+      <a href="#STAR_2020_I1783875-d07-x01-y01">&#9875;</a>
+      <a href="d07-x01-y01.py">&#8984;</a>
+      <a href="d07-x01-y01__data.py">&#128202;</a>
+    </span>
+    <span class="plotname">d07-x01-y01:</span>
+  </div>
+  <a id="STAR_2020_I1783875-d07-x01-y01" href="d07-x01-y01.pdf"><img src="d07-x01-y01.png"></a>
+</div>
+
+<div class="plot" id="plot_d08-x01-y01">
+  <div class="plothead">
+    <span class="plotlinks">
+      <a href="#STAR_2020_I1783875-d08-x01-y01">&#9875;</a>
+      <a href="d08-x01-y01.py">&#8984;</a>
+      <a href="d08-x01-y01__data.py">&#128202;</a>
+    </span>
+    <span class="plotname">d08-x01-y01:</span>
+  </div>
+  <a id="STAR_2020_I1783875-d08-x01-y01" href="d08-x01-y01.pdf"><img src="d08-x01-y01.png"></a>
+</div>
+
+<div class="plot" id="plot_d09-x01-y01">
+  <div class="plothead">
+    <span class="plotlinks">
+      <a href="#STAR_2020_I1783875-d09-x01-y01">&#9875;</a>
+      <a href="d09-x01-y01.py">&#8984;</a>
+      <a href="d09-x01-y01__data.py">&#128202;</a>
+    </span>
+    <span class="plotname">d09-x01-y01:</span>
+  </div>
+  <a id="STAR_2020_I1783875-d09-x01-y01" href="d09-x01-y01.pdf"><img src="d09-x01-y01.png"></a>
+</div>
+
+<div class="plot" id="plot_d10-x01-y01">
+  <div class="plothead">
+    <span class="plotlinks">
+      <a href="#STAR_2020_I1783875-d10-x01-y01">&#9875;</a>
+      <a href="d10-x01-y01.py">&#8984;</a>
+      <a href="d10-x01-y01__data.py">&#128202;</a>
+    </span>
+    <span class="plotname">d10-x01-y01:</span>
+  </div>
+  <a id="STAR_2020_I1783875-d10-x01-y01" href="d10-x01-y01.pdf"><img src="d10-x01-y01.png"></a>
+</div>
+
+<div class="plot" id="plot_d11-x01-y01">
+  <div class="plothead">
+    <span class="plotlinks">
+      <a href="#STAR_2020_I1783875-d11-x01-y01">&#9875;</a>
+      <a href="d11-x01-y01.py">&#8984;</a>
+      <a href="d11-x01-y01__data.py">&#128202;</a>
+    </span>
+    <span class="plotname">d11-x01-y01:</span>
+  </div>
+  <a id="STAR_2020_I1783875-d11-x01-y01" href="d11-x01-y01.pdf"><img src="d11-x01-y01.png"></a>
+</div>
+
+<div class="plot" id="plot_d12-x01-y01">
+  <div class="plothead">
+    <span class="plotlinks">
+      <a href="#STAR_2020_I1783875-d12-x01-y01">&#9875;</a>
+      <a href="d12-x01-y01.py">&#8984;</a>
+      <a href="d12-x01-y01__data.py">&#128202;</a>
+    </span>
+    <span class="plotname">d12-x01-y01:</span>
+  </div>
+  <a id="STAR_2020_I1783875-d12-x01-y01" href="d12-x01-y01.pdf"><img src="d12-x01-y01.png"></a>
+</div>
+
+<div class="plot" id="plot_d13-x01-y01">
+  <div class="plothead">
+    <span class="plotlinks">
+      <a href="#STAR_2020_I1783875-d13-x01-y01">&#9875;</a>
+      <a href="d13-x01-y01.py">&#8984;</a>
+      <a href="d13-x01-y01__data.py">&#128202;</a>
+    </span>
+    <span class="plotname">d13-x01-y01:</span>
+  </div>
+  <a id="STAR_2020_I1783875-d13-x01-y01" href="d13-x01-y01.pdf"><img src="d13-x01-y01.png"></a>
+</div>
+
+<div class="plot" id="plot_d14-x01-y01">
+  <div class="plothead">
+    <span class="plotlinks">
+      <a href="#STAR_2020_I1783875-d14-x01-y01">&#9875;</a>
+      <a href="d14-x01-y01.py">&#8984;</a>
+      <a href="d14-x01-y01__data.py">&#128202;</a>
+    </span>
+    <span class="plotname">d14-x01-y01:</span>
+  </div>
+  <a id="STAR_2020_I1783875-d14-x01-y01" href="d14-x01-y01.pdf"><img src="d14-x01-y01.png"></a>
+</div>
+
+<div class="plot" id="plot_d16-x01-y01">
+  <div class="plothead">
+    <span class="plotlinks">
+      <a href="#STAR_2020_I1783875-d16-x01-y01">&#9875;</a>
+      <a href="d16-x01-y01.py">&#8984;</a>
+      <a href="d16-x01-y01__data.py">&#128202;</a>
+    </span>
+    <span class="plotname">d16-x01-y01:</span>
+  </div>
+  <a id="STAR_2020_I1783875-d16-x01-y01" href="d16-x01-y01.pdf"><img src="d16-x01-y01.png"></a>
+</div>
+
+<div class="plot" id="plot_d17-x01-y01">
+  <div class="plothead">
+    <span class="plotlinks">
+      <a href="#STAR_2020_I1783875-d17-x01-y01">&#9875;</a>
+      <a href="d17-x01-y01.py">&#8984;</a>
+      <a href="d17-x01-y01__data.py">&#128202;</a>
+    </span>
+    <span class="plotname">d17-x01-y01:</span>
+  </div>
+  <a id="STAR_2020_I1783875-d17-x01-y01" href="d17-x01-y01.pdf"><img src="d17-x01-y01.png"></a>
+</div>
+
+<div class="plot" id="plot_d19-x01-y01">
+  <div class="plothead">
+    <span class="plotlinks">
+      <a href="#STAR_2020_I1783875-d19-x01-y01">&#9875;</a>
+      <a href="d19-x01-y01.py">&#8984;</a>
+      <a href="d19-x01-y01__data.py">&#128202;</a>
+    </span>
+    <span class="plotname">d19-x01-y01:</span>
+  </div>
+  <a id="STAR_2020_I1783875-d19-x01-y01" href="d19-x01-y01.pdf"><img src="d19-x01-y01.png"></a>
+</div>
+
+<div class="plot" id="plot_d20-x01-y01">
+  <div class="plothead">
+    <span class="plotlinks">
+      <a href="#STAR_2020_I1783875-d20-x01-y01">&#9875;</a>
+      <a href="d20-x01-y01.py">&#8984;</a>
+      <a href="d20-x01-y01__data.py">&#128202;</a>
+    </span>
+    <span class="plotname">d20-x01-y01:</span>
+  </div>
+  <a id="STAR_2020_I1783875-d20-x01-y01" href="d20-x01-y01.pdf"><img src="d20-x01-y01.png"></a>
+</div>
+
+<div class="plot" id="plot_d22-x01-y01">
+  <div class="plothead">
+    <span class="plotlinks">
+      <a href="#STAR_2020_I1783875-d22-x01-y01">&#9875;</a>
+      <a href="d22-x01-y01.py">&#8984;</a>
+      <a href="d22-x01-y01__data.py">&#128202;</a>
+    </span>
+    <span class="plotname">d22-x01-y01:</span>
+  </div>
+  <a id="STAR_2020_I1783875-d22-x01-y01" href="d22-x01-y01.pdf"><img src="d22-x01-y01.png"></a>
+</div>
+
+<div class="plot" id="plot_d23-x01-y01">
+  <div class="plothead">
+    <span class="plotlinks">
+      <a href="#STAR_2020_I1783875-d23-x01-y01">&#9875;</a>
+      <a href="d23-x01-y01.py">&#8984;</a>
+      <a href="d23-x01-y01__data.py">&#128202;</a>
+    </span>
+    <span class="plotname">d23-x01-y01:</span>
+  </div>
+  <a id="STAR_2020_I1783875-d23-x01-y01" href="d23-x01-y01.pdf"><img src="d23-x01-y01.png"></a>
+</div>
+
+<div class="plot" id="plot_d25-x01-y01">
+  <div class="plothead">
+    <span class="plotlinks">
+      <a href="#STAR_2020_I1783875-d25-x01-y01">&#9875;</a>
+      <a href="d25-x01-y01.py">&#8984;</a>
+      <a href="d25-x01-y01__data.py">&#128202;</a>
+    </span>
+    <span class="plotname">d25-x01-y01:</span>
+  </div>
+  <a id="STAR_2020_I1783875-d25-x01-y01" href="d25-x01-y01.pdf"><img src="d25-x01-y01.png"></a>
+</div>
+
+<div class="plot" id="plot_d26-x01-y01">
+  <div class="plothead">
+    <span class="plotlinks">
+      <a href="#STAR_2020_I1783875-d26-x01-y01">&#9875;</a>
+      <a href="d26-x01-y01.py">&#8984;</a>
+      <a href="d26-x01-y01__data.py">&#128202;</a>
+    </span>
+    <span class="plotname">d26-x01-y01:</span>
+  </div>
+  <a id="STAR_2020_I1783875-d26-x01-y01" href="d26-x01-y01.pdf"><img src="d26-x01-y01.png"></a>
+</div>
+
+<div class="plot" id="plot_d27-x01-y01">
+  <div class="plothead">
+    <span class="plotlinks">
+      <a href="#STAR_2020_I1783875-d27-x01-y01">&#9875;</a>
+      <a href="d27-x01-y01.py">&#8984;</a>
+      <a href="d27-x01-y01__data.py">&#128202;</a>
+    </span>
+    <span class="plotname">d27-x01-y01:</span>
+  </div>
+  <a id="STAR_2020_I1783875-d27-x01-y01" href="d27-x01-y01.pdf"><img src="d27-x01-y01.png"></a>
+</div>
+
+<div class="plot" id="plot_d28-x01-y01">
+  <div class="plothead">
+    <span class="plotlinks">
+      <a href="#STAR_2020_I1783875-d28-x01-y01">&#9875;</a>
+      <a href="d28-x01-y01.py">&#8984;</a>
+      <a href="d28-x01-y01__data.py">&#128202;</a>
+    </span>
+    <span class="plotname">d28-x01-y01:</span>
+  </div>
+  <a id="STAR_2020_I1783875-d28-x01-y01" href="d28-x01-y01.pdf"><img src="d28-x01-y01.png"></a>
+</div>
+
+<div class="plot" id="plot_d29-x01-y01">
+  <div class="plothead">
+    <span class="plotlinks">
+      <a href="#STAR_2020_I1783875-d29-x01-y01">&#9875;</a>
+      <a href="d29-x01-y01.py">&#8984;</a>
+      <a href="d29-x01-y01__data.py">&#128202;</a>
+    </span>
+    <span class="plotname">d29-x01-y01:</span>
+  </div>
+  <a id="STAR_2020_I1783875-d29-x01-y01" href="d29-x01-y01.pdf"><img src="d29-x01-y01.png"></a>
+</div>
+
+<div class="plot" id="plot_d30-x01-y01">
+  <div class="plothead">
+    <span class="plotlinks">
+      <a href="#STAR_2020_I1783875-d30-x01-y01">&#9875;</a>
+      <a href="d30-x01-y01.py">&#8984;</a>
+      <a href="d30-x01-y01__data.py">&#128202;</a>
+    </span>
+    <span class="plotname">d30-x01-y01:</span>
+  </div>
+  <a id="STAR_2020_I1783875-d30-x01-y01" href="d30-x01-y01.pdf"><img src="d30-x01-y01.png"></a>
+</div>
+
+<div class="plot" id="plot_d31-x01-y01">
+  <div class="plothead">
+    <span class="plotlinks">
+      <a href="#STAR_2020_I1783875-d31-x01-y01">&#9875;</a>
+      <a href="d31-x01-y01.py">&#8984;</a>
+      <a href="d31-x01-y01__data.py">&#128202;</a>
+    </span>
+    <span class="plotname">d31-x01-y01:</span>
+  </div>
+  <a id="STAR_2020_I1783875-d31-x01-y01" href="d31-x01-y01.pdf"><img src="d31-x01-y01.png"></a>
+</div>
+
+<div class="plot" id="plot_d32-x01-y01">
+  <div class="plothead">
+    <span class="plotlinks">
+      <a href="#STAR_2020_I1783875-d32-x01-y01">&#9875;</a>
+      <a href="d32-x01-y01.py">&#8984;</a>
+      <a href="d32-x01-y01__data.py">&#128202;</a>
+    </span>
+    <span class="plotname">d32-x01-y01:</span>
+  </div>
+  <a id="STAR_2020_I1783875-d32-x01-y01" href="d32-x01-y01.pdf"><img src="d32-x01-y01.png"></a>
+</div>
+
+<div class="plot" id="plot_d33-x01-y01">
+  <div class="plothead">
+    <span class="plotlinks">
+      <a href="#STAR_2020_I1783875-d33-x01-y01">&#9875;</a>
+      <a href="d33-x01-y01.py">&#8984;</a>
+      <a href="d33-x01-y01__data.py">&#128202;</a>
+    </span>
+    <span class="plotname">d33-x01-y01:</span>
+  </div>
+  <a id="STAR_2020_I1783875-d33-x01-y01" href="d33-x01-y01.pdf"><img src="d33-x01-y01.png"></a>
+</div>
+
+<div class="plot" id="plot_d34-x01-y01">
+  <div class="plothead">
+    <span class="plotlinks">
+      <a href="#STAR_2020_I1783875-d34-x01-y01">&#9875;</a>
+      <a href="d34-x01-y01.py">&#8984;</a>
+      <a href="d34-x01-y01__data.py">&#128202;</a>
+    </span>
+    <span class="plotname">d34-x01-y01:</span>
+  </div>
+  <a id="STAR_2020_I1783875-d34-x01-y01" href="d34-x01-y01.pdf"><img src="d34-x01-y01.png"></a>
+</div>
+
+<div class="plot" id="plot_d35-x01-y01">
+  <div class="plothead">
+    <span class="plotlinks">
+      <a href="#STAR_2020_I1783875-d35-x01-y01">&#9875;</a>
+      <a href="d35-x01-y01.py">&#8984;</a>
+      <a href="d35-x01-y01__data.py">&#128202;</a>
+    </span>
+    <span class="plotname">d35-x01-y01:</span>
+  </div>
+  <a id="STAR_2020_I1783875-d35-x01-y01" href="d35-x01-y01.pdf"><img src="d35-x01-y01.png"></a>
+</div>
+
+<div class="plot" id="plot_d36-x01-y01">
+  <div class="plothead">
+    <span class="plotlinks">
+      <a href="#STAR_2020_I1783875-d36-x01-y01">&#9875;</a>
+      <a href="d36-x01-y01.py">&#8984;</a>
+      <a href="d36-x01-y01__data.py">&#128202;</a>
+    </span>
+    <span class="plotname">d36-x01-y01:</span>
+  </div>
+  <a id="STAR_2020_I1783875-d36-x01-y01" href="d36-x01-y01.pdf"><img src="d36-x01-y01.png"></a>
+</div>
+
+<div class="plot" id="plot_d37-x01-y01">
+  <div class="plothead">
+    <span class="plotlinks">
+      <a href="#STAR_2020_I1783875-d37-x01-y01">&#9875;</a>
+      <a href="d37-x01-y01.py">&#8984;</a>
+      <a href="d37-x01-y01__data.py">&#128202;</a>
+    </span>
+    <span class="plotname">d37-x01-y01:</span>
+  </div>
+  <a id="STAR_2020_I1783875-d37-x01-y01" href="d37-x01-y01.pdf"><img src="d37-x01-y01.png"></a>
+</div>
+
+</section>
+
+<footer>
+<p id="timestamp">Generated at Tuesday, 07. October 2025 05:32PM</p>
+</footer>
+
+</body>
+</html>
